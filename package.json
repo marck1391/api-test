@@ -1,0 +1,26 @@
+{
+  "name": "api-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node node_modules/ts-node/dist/bin test/index.ts",
+    "deploy": "aws lambda update-function-code --function-name api-test --zip-file fileb://C:/git/api-test/api-test.zip"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.15",
+    "@types/node": "^10.12.15",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "aws-lambda-ts": "git+https://github.com/marck1391/aws-lambda-typescript.git",
+    "reflect-metadata": "^0.1.12"
+  }
+}
