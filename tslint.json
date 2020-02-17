@@ -2,8 +2,8 @@
     "rules": {
         "eofline": false,
         "indent": [
-            true,
-            "tabs",
+            false,
+            "spaces",
             2
         ],
         "space-within-parens": [
